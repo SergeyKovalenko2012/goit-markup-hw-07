@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  input,
+  textarea{
+    outline: 0;
+    outline-offset: 0;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.25;
+  }
+  
+ 
+  ul {
+    list-style: none;
+  }
+  
+  address {
+    font-style: normal;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  
+  .conteiner {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }

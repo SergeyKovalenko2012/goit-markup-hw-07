@@ -1,0 +1,172 @@
+
+.portfolio-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+  
+  .portfolio-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+  
+  
+//   /* button-set */
+  
+  .button-set {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+   
+    &__item:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &__lable {
+    padding: 6px 22px;
+    background: $portfolio-button-color;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $primary-text-color;
+    border: none;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+
+    &__lable:hover, &__lable:focus {
+    background-color: $active-color;
+    color: $primary-white-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    }
+
+    &__lable--active {
+    background-color: $active-color;
+    color: $primary-white-color;
+
+    }
+  }
+  
+
+  
+  .servis-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+  
+  
+  
+  .cart-set {
+    flex-wrap: wrap;
+    display: flex;
+    margin-right: -30px;
+    margin-top: -30px;
+
+    &__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-right: 30px;
+    background: $primary-white-color;
+    border: 1px solid $portfolio-servises-item;
+    }
+    &__item:hover, &__item:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &__discription {
+        padding: 20px 24px;
+    }
+    
+    &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 2;
+    color: $primary-text-color;
+    }
+
+    &__name {
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    color: $description-color;
+    }
+  }
+
+    
+  
+  .cart-set__wrapper {
+   
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+
+    content: "";
+    display: block;
+    background: $servises-list-wrapper;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    opacity: 0;
+    }
+
+    &--text {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $primary-white-color;
+    padding: 63px 24px;
+    top: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+    opacity: 0;
+    }
+
+    .cart-set__item:hover &--text {
+            opacity: 1;
+    transform: translateY(0)
+    }
+
+    .cart-set__item:hover &::before {
+            opacity: 1;
+    transform: translateY(0);
+    }
+
+  }
+  
+
+  
+  
+  
+
+  
+  
