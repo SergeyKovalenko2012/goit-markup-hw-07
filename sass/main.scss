@@ -1,13 +1,13 @@
 @import "./utils/normalize";
 @import "./base/general";
 @import "./utils/variable";
-@import "./components/page-header/header";
-@import "./layout/bussines-section/bussines";
-@import "./layout/advantage-section/advantage";
-@import "./layout/develope-section/develope";
-@import "./layout/team-section/team";
-@import "./layout/clients-section/clients";
-@import "./components/page-footer/footer";
-@import "./components/backdrop-modal/backdrop-modal";
+@import "./components/header";
+@import "./layout/bussines";
+@import "./layout/advantage";
+@import "./layout/develope";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./components/footer";
+@import "./components/backdrop-modal";
 
 
